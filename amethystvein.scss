@@ -23,7 +23,37 @@ h3 {
       border: 1px solid $color-4;
       border-radius: 3px;
     }
+    h1 {
+      font-size: 2.5em;
+    }
     display: inline-block;
+  }
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  #zen-intro {
+    grid-column: 1/2;
+  }
+  #zen-supporting {
+    grid-column: 2/3;
+  }
+  .sidebar {
+    grid-column: 2/3;
+  }
+  @media only screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 100%;
+    #zen-intro {
+      grid-column: 1/2;
+    }
+    #zen-supporting {
+      grid-column: 1/2;
+    }
+    .sidebar {
+      grid-column: 1/2;
+    }
   }
 }
 
@@ -63,6 +93,7 @@ h3 {
 
 footer {
   position: fixed;
+  left: 0px;
   bottom: 0px;
   width: 100%;
   background-color: $color-5;

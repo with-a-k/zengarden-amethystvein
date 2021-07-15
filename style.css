@@ -120,7 +120,7 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-image: url("../assets/rock.jpg"); }
+  background-image: url("./assets/rock.jpg"); }
 
 /* --------------------------------
 
@@ -839,6 +839,28 @@ h3 {
   .intro header h1, .intro header h2 {
     border: 1px solid #a39800;
     border-radius: 3px; }
+  .intro header h1 {
+    font-size: 2.5em; }
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%; }
+  .page-wrapper #zen-intro {
+    grid-column: 1/2; }
+  .page-wrapper #zen-supporting {
+    grid-column: 2/3; }
+  .page-wrapper .sidebar {
+    grid-column: 2/3; }
+  @media only screen and (max-width: 768px) {
+    .page-wrapper {
+      display: grid;
+      grid-template-columns: 100%; }
+      .page-wrapper #zen-intro {
+        grid-column: 1/2; }
+      .page-wrapper #zen-supporting {
+        grid-column: 1/2; }
+      .page-wrapper .sidebar {
+        grid-column: 1/2; } }
 
 .wrapper {
   display: grid;
@@ -868,6 +890,7 @@ h3 {
 
 footer {
   position: fixed;
+  left: 0px;
   bottom: 0px;
   width: 100%;
   background-color: #3f10a3;
