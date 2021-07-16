@@ -1081,7 +1081,7 @@ h3 {
 }
 .wrapper .design-selection {
   border-bottom: none;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   grid-column: 1/2;
   grid-row: 1/2;
 }
